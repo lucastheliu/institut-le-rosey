@@ -1,4 +1,7 @@
 import type { Config } from "tailwindcss";
+import { DarkModeConfig } from "tailwindcss/types/config";
+import typography from "@tailwindcss/typography";
+import scrollbar from "tailwind-scrollbar";
 
 const config: Config = {
   content: [
@@ -14,6 +17,7 @@ const config: Config = {
       },
     },
   },
-  plugins: [],
+  plugins: [typography, scrollbar],
+  darkMode: "false" as Partial<DarkModeConfig>,
 };
 export default config;

@@ -1,101 +1,178 @@
+"use client";
+import Link from "next/link";
 import Image from "next/image";
+
+import { TypeAnimation } from "react-type-animation";
+import { motion } from "framer-motion";
+import { images } from "./lib/assets";
+import Scene from "@/components/earth";
+
+function FadeIn({
+  children,
+  className,
+}: {
+  children: React.ReactNode;
+  className?: string;
+}) {
+  return (
+    <motion.div
+      className={className}
+      initial={{ opacity: 0, y: 50 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      transition={{ duration: 1 }}
+    >
+      {children}
+    </motion.div>
+  );
+}
 
 export default function Home() {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-semibold">
-              src/app/page.tsx
-            </code>
-            .
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
-
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
+    <main className="flex flex-col items-center justify-center min-h-screen px-12">
+      <div className="flex items-center h-screen">
+        <div className="flex flex-col gap-4 justify-center items-center">
+          <Image
+            width={240}
+            height={240}
+            alt="Logo"
+            src={"https://static.igem.wiki/teams/5502/logo.png"}
+            className="bg-zinc-800 rounded-full p-8 mb-8 animate-[spin_8s_ease-in-out_infinite]"
+          />
+          <h1 className="text-4xl uppercase tracking-widest">Aptagenix</h1>
+          <p className="min-h-12 md:min-h-8 text-center">
+            <TypeAnimation
+              sequence={[
+                "Our inexpensive, non-invasive solution for detecting non-small cell lung cancer.",
+              ]}
+              wrapper="span"
+              speed={80}
             />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:min-w-44"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+          </p>
+          <div className="flex gap-x-2">
+            <Link
+              className="text-sm border rounded-md px-8 py-2"
+              href={"/results"}
+            >
+              Get started
+            </Link>
+          </div>
         </div>
-      </main>
-      <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
-    </div>
+      </div>
+
+      <div className="flex flex-col justify-center items-center w-screen h-screen">
+        <div className="relative w-full h-[80vh]">
+          <Scene />
+          <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
+            <h1 className="text-lg tracking-wide uppercase bg-white px-16 py-4">
+              <span>We are the</span>{" "}
+              <b className="text-2xl px-2 tracking-normal bg-gradient-to-r from-blue-500 to-purple-500 bg-clip-text text-transparent">
+                iGEM team
+              </b>{" "}
+              <br />
+              <span>from</span>{" "}
+              <b className="text-2xl px-2 tracking-normal bg-gradient-to-r from-blue-500 to-purple-500 bg-clip-text text-transparent">
+                Institut Le Rosey
+              </b>
+            </h1>
+          </div>
+        </div>
+      </div>
+
+      <div className="flex flex-col justify-center items-center h-screen">
+        <FadeIn className="flex flex-col gap-4 justify-center items-center">
+          <h2 className="text-2xl uppercase tracking-widest">Our Team</h2>
+          <p className="min-h-12 md:min-h-8 text-center max-w-3xl">
+            Our iGEM team is composed of members from around the world,
+            including Turkey, Japan, India, Great Britain, Bulgaria, Ukraine,
+            Thailand and more. Each team member has taken on key roles, ranging
+            from safety and human practices to finance and public engagement.
+          </p>
+          <Link className="text-sm border rounded-md px-8 py-2" href={"/team"}>
+            About us
+          </Link>
+        </FadeIn>
+        <FadeIn className="py-12 relative h-64">
+          <div className="absolute left-0 -translate-x-1/2 overflow-x-hidden w-screen">
+            <motion.ul
+              animate={{
+                x: [0, images.length * -(64 * 4)],
+              }}
+              transition={{
+                x: {
+                  duration: 50,
+                  repeat: Infinity,
+                  ease: "linear",
+                },
+              }}
+              className="flex gap-x-8"
+            >
+              {[...Array(2)].map((_, key) => (
+                <li key={key} className="flex gap-x-4 min-w-max">
+                  {images.map((url, index) => (
+                    <div key={index} className="w-80 h-64 relative">
+                      <Image
+                        width={256}
+                        height={256}
+                        alt={`Picture ${index + 1}`}
+                        src={url}
+                        className="object-cover opacity-80 w-full h-full"
+                      />
+                      <div className="absolute inset-0 bg-zinc-800 opacity-50" />
+                    </div>
+                  ))}
+                </li>
+              ))}
+            </motion.ul>
+          </div>
+        </FadeIn>
+      </div>
+
+      <div className="flex items-center h-screen">
+        <FadeIn className="flex flex-col gap-4 justify-center items-center">
+          <h2 className="text-2xl uppercase tracking-widest">The Mission</h2>
+          <p className="min-h-12 md:min-h-8 text-center max-w-3xl">
+            Our project aims to make early lung cancer screening affordable for
+            everyone. The kit will act as a preliminary test to identify
+            high-risk individuals, allowing for early treatment before lung
+            cancer advances to critical stages. By offering a low-cost solution,
+            we hope to improve public access to cancer diagnosis, helping to
+            reduce disparities in healthcare accessibility.
+          </p>
+          <Link
+            className="text-sm border rounded-md px-8 py-2"
+            href={"/results"}
+          >
+            Learn more
+          </Link>
+          <div className="hidden md:grid grid-cols-3 gap-4 max-w-4xl min-h-[60vh] py-8 text-center text-white">
+            <div className="col-span-2 flex justify-center items-center bg-zinc-800 size-full p-8">
+              <p>
+                Lung cancer is the leading cause of cancer-related deaths
+                worldwide, responsible for <b>1.8 million deaths in 2022</b>.
+              </p>
+            </div>
+            <div className="row-span-2 flex justify-center items-center bg-zinc-800 size-full p-8">
+              <p>
+                The average cost for a lung cancer diagnosis is <b>$3,558</b>.
+                Many patients undergo these expensive tests only to be told they
+                don&apos;t have lung cancer
+              </p>
+            </div>
+            <div className="flex justify-center items-center bg-zinc-800 size-full p-8">
+              <p>
+                Due to late-stage diagnoses, lung cancer treatment is{" "}
+                <b>often ineffective</b>.
+              </p>
+            </div>
+            <div className="flex justify-center items-center bg-zinc-800 size-full p-8">
+              <p>
+                In fact, <b>43.6% of patients</b> diagnosed turn out to be
+                healthy, leading to unnecessary financial burden.
+              </p>
+            </div>
+          </div>
+        </FadeIn>
+      </div>
+    </main>
   );
 }
