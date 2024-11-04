@@ -62,19 +62,6 @@ export default function Home() {
       <div className="flex flex-col justify-center items-center w-screen h-screen">
         <div className="relative w-full h-[80vh]">
           <Scene />
-          <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
-            <h1 className="text-lg tracking-wide uppercase bg-white px-16 py-4">
-              <span>We are the</span>{" "}
-              <b className="text-2xl px-2 tracking-normal bg-gradient-to-r from-blue-500 to-purple-500 bg-clip-text text-transparent">
-                iGEM team
-              </b>{" "}
-              <br />
-              <span>from</span>{" "}
-              <b className="text-2xl px-2 tracking-normal bg-gradient-to-r from-blue-500 to-purple-500 bg-clip-text text-transparent">
-                Institut Le Rosey
-              </b>
-            </h1>
-          </div>
         </div>
       </div>
 
@@ -84,8 +71,9 @@ export default function Home() {
           <p className="min-h-12 md:min-h-8 text-center max-w-3xl">
             Our iGEM team is composed of members from around the world,
             including Turkey, Japan, India, Great Britain, Bulgaria, Ukraine,
-            Thailand and more. Each team member has taken on key roles, ranging
-            from safety and human practices to finance and public engagement.
+            Thailand, Greece and more. Each team member has taken on key roles,
+            ranging from safety and human practices to finance and public
+            engagement.
           </p>
           <Link className="text-sm border rounded-md px-8 py-2" href={"/team"}>
             About us
@@ -171,6 +159,20 @@ export default function Home() {
               </p>
             </div>
           </div>
+        </FadeIn>
+      </div>
+
+      <div className="flex items-center h-screen w-screen">
+        <FadeIn className="flex flex-col justify-center w-full px-8">
+          <iframe
+            title="Institut-Le-Rosey: Aptagenix: the Story of John (2024) - Project Promotion [English]"
+            width={840}
+            height={475}
+            src="https://video.igem.org/videos/embed/f29207f5-40a0-4979-a0e2-4065a28860cb"
+            allowFullScreen={true}
+            sandbox="allow-same-origin allow-scripts allow-popups allow-forms"
+            className="w-full border rounded-md"
+          />
         </FadeIn>
       </div>
     </main>

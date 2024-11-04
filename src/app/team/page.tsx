@@ -21,7 +21,7 @@ export default function Team() {
             <p>
               Our iGEM team is composed of members from around the world,
               including Turkey, Japan, India, Great Britain, Bulgaria, Ukraine,
-              Thailand and more.
+              Thailand, Greece and more.
             </p>
             <p>
               Each team member has taken on key roles, ranging from safety and
@@ -29,8 +29,8 @@ export default function Team() {
             </p>
           </div>
         </div>
-        <div className="flex justify-center lg:max-h-[70vh] bg-zinc-200 rounded-md w-full shadow-inner">
-          <ul className="w-max grid grid-cols-2 md:grid-cols-3 gap-8 p-8 lg:overflow-y-auto scrollbar-none">
+        <div className="flex justify-center lg:max-h-[70vh] md:bg-zinc-200 rounded-md w-full md:shadow-inner">
+          <ul className="w-max grid grid-cols-2 md:grid-cols-3 gap-4 md:gap-8 md:p-8 lg:overflow-y-auto scrollbar-none">
             {members.map((member, index) => {
               const { name, href } = member;
               return (

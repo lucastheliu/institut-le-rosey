@@ -45,12 +45,12 @@ export default async function Page({ params }: Props) {
 
   return (
     <div className="flex flex-col">
-      <div className="flex w-screen p-4">
+      <div className="flex w-screen md:p-4">
         <aside className="hidden md:block fixed top-0 h-screen overflow-y-auto w-80 px-8 pr-16">
           <Table toc={toc} />
         </aside>
         <main className="md:ml-60 w-full">
-          <div className="flex justify-center p-16">
+          <div className="flex justify-center px-16 py-24">
             <article className="prose prose-zinc max-w-3xl">
               <Markdown>{content}</Markdown>
             </article>
