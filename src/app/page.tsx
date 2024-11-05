@@ -28,7 +28,7 @@ function FadeIn({
 
 export default function Home() {
   return (
-    <main className="flex flex-col items-center justify-center min-h-screen px-12">
+    <main className="flex flex-col items-center justify-center min-h-screen px-6">
       <div className="flex items-center h-screen">
         <div className="flex flex-col gap-4 justify-center items-center">
           <Image
@@ -51,7 +51,7 @@ export default function Home() {
           <div className="flex gap-x-2">
             <Link
               className="text-sm border rounded-md px-8 py-2"
-              href={"/results"}
+              href={"#scene"}
             >
               Get started
             </Link>
@@ -60,8 +60,14 @@ export default function Home() {
       </div>
 
       <div className="flex flex-col justify-center items-center w-screen h-screen">
-        <div className="relative w-full h-[80vh]">
+        <div
+          id="scene"
+          className="relative flex flex-col items-center w-full h-[80vh]"
+        >
           <Scene />
+          <p className="border-b p-1 my-4">
+            This is a model of our planet: Earth.
+          </p>
         </div>
       </div>
 
@@ -128,7 +134,7 @@ export default function Home() {
           </p>
           <Link
             className="text-sm border rounded-md px-8 py-2"
-            href={"/results"}
+            href={"/description"}
           >
             Learn more
           </Link>
@@ -163,16 +169,25 @@ export default function Home() {
       </div>
 
       <div className="flex items-center h-screen w-screen">
-        <FadeIn className="flex flex-col justify-center w-full px-8">
-          <iframe
-            title="Institut-Le-Rosey: Aptagenix: the Story of John (2024) - Project Promotion [English]"
-            width={840}
-            height={475}
-            src="https://video.igem.org/videos/embed/f29207f5-40a0-4979-a0e2-4065a28860cb"
-            allowFullScreen={true}
-            sandbox="allow-same-origin allow-scripts allow-popups allow-forms"
-            className="w-full border rounded-md"
-          />
+        <FadeIn className="flex flex-col justify-center items-center w-full p-8">
+          <div className="flex flex-col justify-center items-center gap-y-4 py-4">
+            <h2 className="text-2xl uppercase tracking-widest">Video</h2>
+            <p className="min-h-12 md:min-h-8 text-center max-w-3xl">
+              Aptagenix: the Story of John (2024)
+            </p>
+          </div>
+
+          <div className="w-full aspect-video max-w-5xl">
+            <iframe
+              title="Institut-Le-Rosey: Aptagenix: the Story of John (2024) - Project Promotion [English]"
+              width={1280}
+              height={720}
+              src="https://video.igem.org/videos/embed/f29207f5-40a0-4979-a0e2-4065a28860cb"
+              allowFullScreen={true}
+              sandbox="allow-same-origin allow-scripts allow-popups allow-forms"
+              className="size-full border rounded-md"
+            />
+          </div>
         </FadeIn>
       </div>
     </main>

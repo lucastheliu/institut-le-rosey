@@ -50,7 +50,7 @@ export default async function Page({ params }: Props) {
           <Table toc={toc} />
         </aside>
         <main className="md:ml-60 w-full">
-          <div className="flex justify-center px-16 py-24">
+          <div className="flex justify-center px-8 md:px-16 py-24">
             <article className="prose prose-zinc max-w-3xl">
               <Markdown>{content}</Markdown>
             </article>

@@ -1,0 +1,108 @@
+{
+  "members": [
+    {
+      "name": "Fotis Xintaropoulos",
+      "role": "Primary PI",
+      "tasks": "Conceptualization, Project Administration",
+      "specificTasks": "Fotis guided us throughout the duration of the project. He would provide crucial feedback for our ideas and suggested directions we could look into in the early stages. He also helped us secure time slots and workspace within the school and the university's laboratory."
+    },
+    {
+      "name": "Chawanvit (Pat) Tangwongsiri",
+      "role": "Student Leader",
+      "tasks": "Conceptualization, Background Research, Investigation, Notebook/record keeping, Project Administration, Public Engagement, Writing",
+      "specificTasks": "(1) Conceptualization - As the student leader, Pat led the brainstorming sessions for shaping the project idea. (2) Background Research - Pat researched key biomarkers and identified the presence of EGFR mutations to be used in our preliminary diagnosis. (3) Investigation - Pat devoted approximately three days a week to hands-on research in the wet lab. (4) Notebook/Record Keeping - Pat maintained detailed progress records after each session he led. (5) Project Management - As the project leader, Pat oversaw deadlines, coordinated the team, and ensured timely completion of all tasks. (6) Public Engagement - Pat led the project presentation at school and organized educational sessions on cancer awareness for younger students. (7) Writing - Pat wrote and reviewed multiple wiki pages."
+    },
+    {
+      "name": "Victor Demyanyuk",
+      "role": "Student",
+      "tasks": "Conceptualization, Background Research, Investigation, Notebook/record keeping, Safety",
+      "specificTasks": "(1) Conceptualization - Victor participated in the brainstorming process for coming up with the project idea. (2) Background research - Victor looked for studies that could identify potential biomarkers such as EGFR mutations for use in non-invasive early cancer detection. (3) Investigation - Victor worked in the wet lab for about 1 day per week. (4) Notebook/record keeping - Victor maintained detailed progress records after each session he led. (5) Safety - Victor was responsible for filling out the safety form."
+    },
+    {
+      "name": "Buse Toksoz",
+      "role": "Student",
+      "tasks": "Conceptualization, Background Research, Investigation, Fundraising, Public Engagement, Notebook/record keeping",
+      "specificTasks": "(1) Conceptualization - Buse participated in the brainstorming process for coming up with the project idea. (2) Background research - Buse studied potential biomarkers such as EGFR mutations that could be used in non-invasive early cancer detection. (3) Investigation - Buse did some of the most work in the wet lab and worked around 3 days a week. (4) Fundraising - Buse managed our hoodie sales fundraiser, handling orders and selling to students. (5) Public Engagement - Buse presented the project to the school and coordinated educational sessions about cancer for younger students. (6) Notebook/record keeping - Buse maintained detailed progress records after each session she led."
+    },
+    {
+      "name": "Kei Hayashi",
+      "role": "Student",
+      "tasks": "Conceptualization, Background Research, Investigation, Fundraising, Wiki Coding",
+      "specificTasks": "(1) Conceptualization - Kei participated in the brainstorming process for the project idea. (2) Background research - Kei studied potential biomarkers such as EGFR mutations that could be used in non-invasive early cancer detection. (3) Investigation - Kei worked in the wet lab for about 1 day per week. (4) Fundraising - Kei was responsible for early fundraising for the project, reaching out to and pitching to grant programs. (5) Wiki Coding - Kei was in charge of reviewing the wiki code before publication."
+    },
+    {
+      "name": "Aaria Garhwal",
+      "role": "Student",
+      "tasks": "Conceptualization, Background Research, Investigation, Notebook/record keeping",
+      "specificTasks": "(1) Conceptualization - Aaria participated in the brainstorming process for coming up with the project idea. (2) Background research - Aaria looked for studies that could identify potential biomarkers such as EGFR mutations for use in non-invasive early cancer detection. (3) Investigation - Aaria worked in the lab for about 1 day per week. (4) Notebook/record keeping - Aaria maintained detailed progress records after each session she led."
+    },
+    {
+      "name": "Stefano Malik",
+      "role": "Student",
+      "tasks": "Conceptualization, Background Research, Investigation, Writing",
+      "specificTasks": "(1) Conceptualization - Stefano participated in the brainstorming process for coming up with the project idea. (2) Background research - Stefano looked for studies that could identify potential biomarkers, such as EGFR mutations, for use in non-invasive early cancer detection. (3) Investigation - Stefano worked in the lab for about 1 day per week. (4) Writing - Stefano wrote the contents for various wiki pages. (5) Visualization - Stefano helped to create the script for the promotional video of the project."
+    },
+    {
+      "name": "Apsara Baume",
+      "role": "Student",
+      "tasks": "Conceptualization, Background Research, Investigation, Notebook/record keeping, Visualization",
+      "specificTasks": "(1) Conceptualization - Apsara participated in the brainstorming process for coming up with the project idea. (2) Background research - Apsara looked for studies that could identify potential biomarkers such as EGFR mutations for use in non-invasive early cancer detection. (3) Investigation - Apsara worked in the wet lab for about 1 day per week. (4) Notebook/record keeping - Apsara recorded the progress after each session in which she was in charge. (5) Visualization - Apsara made illustrations and animations to showcase the project."
+    },
+    {
+      "name": "Lucas Liu",
+      "role": "Student",
+      "tasks": "Conceptualization, Background Research, Wiki Coding, Visualization",
+      "specificTasks": "(1) Conceptualization - Lucas participated in the brainstorming process for coming up with the project idea. (2) Background research - Lucas looked for studies that could identify potential biomarkers such as EGFR mutations for use in non-invasive early cancer detection. (3) Investigation - Lucas worked in the wet lab for about 1 day per week. (4) Wiki Coding - Lucas was responsible for coding the entire project wiki, ensuring all information was accurate and in the right format. (5) Visualization - Lucas led the creation of the illustrations and animations for all our presentations and the wiki content."
+    },
+    {
+      "name": "Skevi Afroditi",
+      "role": "Advisor",
+      "tasks": "Other",
+      "specificTasks": "Afroditi helped process orders for lab materials and handled logistics for the IGEM Jamboree in Paris, including travel and accommodation. She communicated with the school administration to ensure everything ran smoothly and played a part in promoting the project and recruiting students. She also managed the funding for IGEM and coordinated the experiments with the school."
+    },
+    {
+      "name": "Ioannis Retalis",
+      "role": "Advisor",
+      "tasks": "Other",
+      "specificTasks": "Ioannis was our main advisor, guiding us through the iGEM competition with his experience from previous years. He introduced us to how the competition works, provided feedback on our project idea, and helped with team organization and planning."
+    }
+  ],
+  "contributors": [
+    {
+      "name": "Swiss Federal Institute of Technology Lausanne (EPFL)",
+      "role": "Institution",
+      "tasks": "Other",
+      "specificTasks": "EPFL provided us with lab space shared with their iGEM team, granting us access to their equipment. Their graduate students advised us on protecting DNA from exonuclease activity and improving detection by increasing DNA concentration."
+    },
+    {
+      "name": "Matchamon (Nam) Pianapitham",
+      "role": "External Advisor",
+      "tasks": "Other",
+      "specificTasks": "Nam introduced us to engineering concepts and synthetic biology. She suggested focusing on a local problem or research from nearby universities, which led us to the University of Geneva paper on EGFR mutations that inspired Aptagenix. She also shared her experience of starting an iGEM team without prior experience."
+    },
+    {
+      "name": "Angel Thibault",
+      "role": "External Advisor",
+      "tasks": "Other",
+      "specificTasks": "Angel guided us in validating our project ideas after our presentation. She recommended using premade RCA kits to simplify the experiments and helped select the correct materials. Angel also advised on using gel electrophoresis to confirm the success of our RCA experiments."
+    },
+    {
+      "name": "Grisha Bogolyubov",
+      "role": "Collaborator",
+      "tasks": "Other",
+      "specificTasks": "As the president of the Le Rosey Debating Society, Grisha organized a debate on the ethics of synthetic biology to promote the project, helping the teams prepare and chairing the debate."
+    },
+    {
+      "name": "Timur Karimov",
+      "role": "Collaborator",
+      "tasks": "Conceptualization, Background Research",
+      "specificTasks": "(1) Conceptualization - Timur participated in the brainstorming process for coming up with the project idea. (2) Background research - Timur looked for studies that could identify potential biomarkers such as EGFR mutations for use in non-invasive early cancer detection."
+    },
+    {
+      "name": "Mete San",
+      "role": "Collaborator",
+      "tasks": "Conceptualization, Background Research",
+      "specificTasks": "(1) Conceptualization - Mete participated in the brainstorming process for coming up with the project idea. (2) Background research - Mete looked for studies that could identify potential biomarkers such as EGFR mutations for non-invasive early cancer detection."
+    }
+  ]
+}
