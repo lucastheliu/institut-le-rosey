@@ -4,27 +4,10 @@ import Image from "next/image";
 
 import { TypeAnimation } from "react-type-animation";
 import { motion } from "framer-motion";
-import { images } from "./lib/assets";
-import Scene from "@/components/earth";
+import { images } from "@/lib/assets";
 
-function FadeIn({
-  children,
-  className,
-}: {
-  children: React.ReactNode;
-  className?: string;
-}) {
-  return (
-    <motion.div
-      className={className}
-      initial={{ opacity: 0, y: 50 }}
-      whileInView={{ opacity: 1, y: 0 }}
-      transition={{ duration: 1 }}
-    >
-      {children}
-    </motion.div>
-  );
-}
+import { FadeIn } from "@/components/animations";
+import Scene from "@/components/earth";
 
 export default function Home() {
   return (
@@ -109,7 +92,7 @@ export default function Home() {
                         height={256}
                         alt={`Picture ${index + 1}`}
                         src={url}
-                        className="object-cover opacity-80 w-full h-full"
+                        className="object-cover opacity-80 size-full"
                       />
                       <div className="absolute inset-0 bg-zinc-800 opacity-50" />
                     </div>
@@ -121,7 +104,7 @@ export default function Home() {
         </FadeIn>
       </div>
 
-      <div className="flex items-center h-screen">
+      <div className="flex items-center md:h-[120vh] py-24 md:py-0">
         <FadeIn className="flex flex-col gap-4 justify-center items-center">
           <h2 className="text-2xl uppercase tracking-widest">The Mission</h2>
           <p className="min-h-12 md:min-h-8 text-center max-w-3xl">
@@ -138,14 +121,14 @@ export default function Home() {
           >
             Learn more
           </Link>
-          <div className="hidden md:grid grid-cols-3 gap-4 max-w-4xl min-h-[60vh] py-8 text-center text-white">
-            <div className="col-span-2 flex justify-center items-center bg-zinc-800 size-full p-8">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-4 max-w-4xl min-h-[60vh] py-8 text-center text-white">
+            <div className="md:col-span-2 flex justify-center items-center bg-zinc-800 size-full p-8">
               <p>
                 Lung cancer is the leading cause of cancer-related deaths
                 worldwide, responsible for <b>1.8 million deaths in 2022</b>.
               </p>
             </div>
-            <div className="row-span-2 flex justify-center items-center bg-zinc-800 size-full p-8">
+            <div className="md:row-span-2 flex justify-center items-center bg-zinc-800 size-full p-8">
               <p>
                 The average cost for a lung cancer diagnosis is <b>$3,558</b>.
                 Many patients undergo these expensive tests only to be told they
@@ -173,7 +156,7 @@ export default function Home() {
           <div className="flex flex-col justify-center items-center gap-y-4 py-4">
             <h2 className="text-2xl uppercase tracking-widest">Video</h2>
             <p className="min-h-12 md:min-h-8 text-center max-w-3xl">
-              Aptagenix: the Story of John (2024)
+              Here, we would like to show you one of our videos. Please enjoy!
             </p>
           </div>
 

@@ -12,6 +12,7 @@ interface Link {
 const links: Link[] = [
   { name: "Home", href: "/" },
   { name: "Team", href: "/team" },
+  { name: "Attributions", href: "/attributions" },
   { name: "Description", href: "/description" },
   { name: "Experiments", href: "/experiments" },
   { name: "Results", href: "/results" },

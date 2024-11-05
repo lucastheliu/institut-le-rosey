@@ -1,6 +1,6 @@
 import Image from "next/image";
 import data from "./data.json";
-import { getImage } from "../lib/assets";
+import { getImage } from "@/lib/assets";
 
 interface Member {
   name: string;
